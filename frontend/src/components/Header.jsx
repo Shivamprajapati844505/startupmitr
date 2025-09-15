@@ -1,20 +1,51 @@
-import React from "react";
-
+import React, { useState } from "react";
+import { FaSearch, FaBars, FaTimes } from "react-icons/fa";
+import { ArrowUpRightIcon } from "@heroicons/react/24/outline";
 function Header() {
+  const [open, setOpen] = useState(false);
+
   return (
     <header className="bg-white shadow-md sticky top-0 z-50">
-      <div className="container mx-auto flex justify-between items-center py-4 px-6">
-        <h1 className="text-2xl font-bold text-blue-600">Startup Mitr</h1>
-        <nav className="space-x-6">
-          <a href="/" className="hover:text-blue-600">Home</a>
-          <a href="/mission" className="hover:text-blue-600">Mission</a>
-          <a href="/vision" className="hover:text-blue-600">Vision</a>
-          <a href="/team" className="hover:text-blue-600">Team</a>
-          <a href="/mentors" className="hover:text-blue-600">Mentors</a>
-          <a href="/contact" className="hover:text-blue-600">Contact</a>
-          <a href="/login" className="px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700">Login</a>
+      <div className="container mx-auto flex justify-between items-center py-4 px-22">
+        
+        <h1 className="text-3xl font-bold text-indigo-950">Startup Mitr</h1>
+
+        
+        <nav className="hidden md:flex space-x-12 pb-0 pt-10">
+          <a href="/" className="text-lg font-semibold text-indigo-950 hover:text-violet-600">HOME</a>
+          <a href="/about" className="text-lg font-semibold text-indigo-950 hover:text-violet-600">ABOUT</a>
+          <a href="/services" className="text-lg font-semibold text-indigo-950 hover:text-violet-600">SERVICES</a>
+          <a href="/contact" className="text-lg font-semibold text-indigo-950 hover:text-violet-600">CONTACT</a>
         </nav>
+
+        
+    <div className="flex items-center gap-6">
+      <button className="hidden md:flex items-center gap-2 bg-violet-700  group hover:bg-violet-950 text-white font-semibold text-lg px-6 py-3 rounded-full shadow">
+        Get Started
+        <div className=" p-2 bg-white rounded-full group-hover:bg-violet-950 ">
+          <ArrowUpRightIcon className="w-5 h-5 text-violet-700 group-hover:text-white" />
+        </div>
+      </button>
+      <FaSearch className="text-2xl text-indigo-950 cursor-pointer hidden md:block" />
+          
+          <button
+            onClick={() => setOpen(!open)}
+            className="md:hidden text-2xl text-indigo-950"
+          >
+            {open ? <FaTimes /> : <FaBars />}
+          </button>
+        </div>
       </div>
+
+      
+      {open && (
+        <nav className="md:hidden bg-white shadow-lg flex flex-col items-center space-y-4 py-6">
+          <a href="/" className="font-semibold text-indigo-950 hover:text-violet-600">HOME</a>
+          <a href="/about" className="font-semibold text-indigo-950 hover:text-violet-600">ABOUT</a>
+          <a href="/services" className="font-semibold text-indigo-950 hover:text-violet-600">SERVICES</a>
+          <a href="/contact" className="font-semibold text-indigo-950 hover:text-violet-600">CONTACT</a>
+        </nav>
+      )}
     </header>
   );
 }
