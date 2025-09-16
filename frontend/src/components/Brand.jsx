@@ -1,49 +1,35 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
 import { ArrowUpRightIcon } from "@heroicons/react/24/outline";
-import imgLeft from "../assets/about_left.jpg";
-import imgRight from "../assets/about_right.jpg";
+import imgLeft from "../assets/img_07.webp";
+import imgRight from "../assets/img_08.jpg";
 import circleImg from "../assets/img_09.png";
 import starImg from "../assets/img_10.png";
-import OurSkills from './OurSkills';
 
-const AboutUs = () => {
+function Brand() {
+    const navigate = useNavigate()
   return (
-    <div className="container mx-auto px-4 sm:px-6 lg:px-0 py-12">
-      {/* Heading */}
-      <div className="text-center max-w-2xl mx-auto mb-12">
-        <p className="text-xs sm:text-sm md:text-base font-semibold text-violet-600 uppercase">
-          WHO WE ARE
-        </p>
-        <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-indigo-950 mt-3">
-          About Our Company
-        </h1>
-        <p className="text-gray-600 mt-3 text-sm sm:text-base">
-          We are a passionate team dedicated to helping businesses grow through <br />
-          innovative strategies, creative marketing, and a strong digital
-          presence.
-        </p>
-      </div>
-      <section className="relative bg-white py-1 px-6 lg:px-20">
+    <section className="relative bg-white py-16 px-6 lg:px-20">
       <div className="grid grid-cols-1 md:grid-cols-3 gap-10 items-center">
         {/* Left Image */}
         <div className="flex justify-center md:justify-start relative">
           <img
             src={imgLeft}
             alt="Teamwork"
-            className=" mt-0 w-[250px] sm:w-[300px] md:w-[350px] lg:w-[350px] rounded-full object-cover bg-amber-100"
+            className="w-[250px] sm:w-[300px] md:w-[350px] lg:w-[400px] rounded-full object-cover bg-amber-100"
           />
           <img
             src={starImg} 
             alt="Rotating Circle"
-            className="absolute bottom-5 w-[50px] h-[50px] animate-spin-slow"
+            className="absolute bottom-0 w-[50px] h-[50px] animate-spin-slow"
           />
         </div>
 
         {/* Center Content */}
         <div className="text-center md:text-left max-w-xl mx-auto">
-          <h2 className="text-3xl sm:text-4xl md:text-3xl font-extrabold text-indigo-950 leading-snug">
-            Brand Development & Digital Marketing Solutions.
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-indigo-950 leading-snug">
+            Comprehensive Brand <br /> Development & <br /> Digital Growth
+            Solutions
           </h2>
           <p className="text-gray-600 mt-4 text-sm sm:text-base md:text-lg">
             Welcome to{" "}
@@ -66,21 +52,19 @@ const AboutUs = () => {
           <img
             src={circleImg} 
             alt="Rotating Circle"
-            className="absolute top-40 right-80 w-[150px] h-[100px] animate-spin-slow"
+            className="absolute top-40 right-100 w-[150px] h-[100px] animate-spin-slow"
           />
 
           <img
             src={imgRight}
             alt="Digital Growth"
-            className="lg:mt-40 w-[250px] sm:w-[300px] sm:mt-0 md:w-[350px] lg:w-[350px] 
+            className="py-10 w-[250px] sm:w-[300px] md:w-[350px] lg:w-[400px] 
                rounded-[12rem] object-cover relative z-10"
           />
         </div>
       </div>
     </section>
-    <OurSkills/>
-    </div>
   );
-};
+}
 
-export default AboutUs;
+export default Brand;

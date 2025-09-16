@@ -12,6 +12,7 @@ import ContactUs from "./components/ContactUs";
 import Mission from "./pages/Mission";
 import Vision from "./pages/Vision";
 import Team from "./pages/Team";
+import Services from './components/Services';
 
 function App() {
   return (
@@ -24,7 +25,7 @@ function App() {
           <Routes>
             <Route path="/" element={<Dashboard />} />
             <Route path="/about" element={<About />} />
-            <Route path="/mentors" element={<Mentors />} />
+            <Route path="/services" element={<Services/>} />
             <Route path="/contact" element={<ContactUs />} />
 
             

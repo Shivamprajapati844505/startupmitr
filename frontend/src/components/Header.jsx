@@ -15,7 +15,7 @@ function Header() {
         </h1>
 
         {/* Desktop Nav */}
-        <nav className="hidden md:flex space-x-6 lg:space-x-12">
+        <nav className="hidden md:flex space-x-6 pt-6 lg:space-x-12">
           <a href="/" className="text-sm lg:text-lg font-semibold text-indigo-950 hover:text-violet-600">HOME</a>
           <a href="/about" className="text-sm lg:text-lg font-semibold text-indigo-950 hover:text-violet-600">ABOUT</a>
           <a href="/services" className="text-sm lg:text-lg font-semibold text-indigo-950 hover:text-violet-600">SERVICES</a>
