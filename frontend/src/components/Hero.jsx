@@ -23,17 +23,14 @@ function Hero() {
 
         {/* Center Content */}
         <div className="text-center md:text-left order-3 md:order-none">
-          <p className="text-xs sm:text-sm md:text-base font-semibold text-violet-600 uppercase">
-            Social Media Marketing
-          </p>
+          
 
           <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-extrabold text-indigo-950 leading-snug sm:leading-tight mt-3 sm:mt-4">
-            Easily Grow Your <br /> Business
+            Let’s Build Your <br /> Growth Plan 
           </h1>
 
           <p className="text-gray-600 mt-3 sm:mt-4 text-xs sm:text-sm md:text-base lg:text-lg max-w-xl">
-            Veniam eaque irure faucibus deleniti proident lacus aliqua culpa
-            modi, pede leo platea primis montes.
+            We help startups and businesses grow digitally, connect with distributors, and unlock real opportunities all with complete transparency.
           </p>
 
           {/* Buttons */}

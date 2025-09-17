@@ -7,36 +7,32 @@ import Footer from "./components/Footer";
 import Hero from "./components/Hero";
 import About from "./components/About";
 import Dashboard from "./components/Dashboard";
-import Mentors from "./components/Mentors";
 import ContactUs from "./components/ContactUs";
 import Mission from "./pages/Mission";
 import Vision from "./pages/Vision";
 import Team from "./pages/Team";
-import Services from './components/Services';
+import Services from "./components/Services";
+import ScrollToTop from "./pages/ScrollToTop";
 
 function App() {
   return (
     <Router>
-      <div className="min-h-screen flex flex-col">
-        <Header />
+      <ScrollToTop />
 
-        
-        <main className="flex-grow">
-          <Routes>
-            <Route path="/" element={<Dashboard />} />
-            <Route path="/about" element={<About />} />
-            <Route path="/services" element={<Services/>} />
-            <Route path="/contact" element={<ContactUs />} />
+      <Header />
 
-            
-            <Route path="/mission" element={<Mission />} />
-            <Route path="/vision" element={<Vision />} />
-            <Route path="/team" element={<Team />} />
-          </Routes>
-        </main>
+      <Routes>
+        <Route path="/" element={<Dashboard />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/services" element={<Services />} />
+        <Route path="/contact" element={<ContactUs />} />
 
-        <Footer />
-      </div>
+        <Route path="/mission" element={<Mission />} />
+        <Route path="/vision" element={<Vision />} />
+        <Route path="/team" element={<Team />} />
+      </Routes>
+
+      <Footer />
     </Router>
   );
 }
