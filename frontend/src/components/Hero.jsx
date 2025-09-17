@@ -8,7 +8,7 @@ import img_05 from "../assets/img_05.png";
 import img_06 from "../assets/img_06.png";
 
 function Hero() {
-  const navigate = useNavigate()
+  const navigate = useNavigate();
   return (
     <section className="relative bg-gradient-to-b from-white to-indigo-50">
       <div className="container mx-auto px-4 sm:px-6 lg:px-12 py-10 sm:py-16 grid grid-cols-1 md:grid-cols-3 gap-8 items-center">
@@ -23,19 +23,22 @@ function Hero() {
 
         {/* Center Content */}
         <div className="text-center md:text-left order-3 md:order-none">
-          
-
           <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-extrabold text-indigo-950 leading-snug sm:leading-tight mt-3 sm:mt-4">
-            Let’s Build Your <br /> Growth Plan 
+            Let’s Build Your <br /> Growth Plan
           </h1>
 
           <p className="text-gray-600 mt-3 sm:mt-4 text-xs sm:text-sm md:text-base lg:text-lg max-w-xl">
-            We help startups and businesses grow digitally, connect with distributors, and unlock real opportunities all with complete transparency.
+            We help startups and businesses grow digitally, connect with
+            distributors, and unlock real opportunities all with complete
+            transparency.
           </p>
 
           {/* Buttons */}
           <div className="flex justify-center md:justify-start gap-4 mt-6 flex-wrap">
-            <button onClick = {()=>{navigate('contact')}}
+            <button
+              onClick={() => {
+                navigate("contact");
+              }}
               className="flex items-center gap-2 bg-violet-700 hover:bg-violet-950 text-white font-semibold 
     px-5 py-2 sm:px-6 sm:py-2.5 md:px-7 md:py-3 text-sm sm:text-base rounded-full shadow transition"
             >
@@ -62,13 +65,12 @@ function Hero() {
 
         {/* Right Side Image */}
         <div className="flex justify-center md:justify-end order-2 md:order-none">
-  <img
-    src={img_02}
-    alt="Analytics"
-    className="hidden sm:block w-[200px] sm:w-[250px] md:w-[300px] lg:w-[500px] rounded-lg"
-  />
-</div>
-
+          <img
+            src={img_02}
+            alt="Analytics"
+            className="hidden sm:block w-[200px] sm:w-[250px] md:w-[300px] lg:w-[500px] rounded-lg"
+          />
+        </div>
       </div>
     </section>
   );

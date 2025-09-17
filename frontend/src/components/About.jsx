@@ -6,12 +6,13 @@ import imgRight from "../assets/about_right.jpg";
 import circleImg from "../assets/img_09.png";
 import starImg from "../assets/img_10.png";
 import OurSkills from './OurSkills';
+import lightImg from "../assets/lite-icons1.svg";
 
 const AboutUs = () => {
   return (
-    <div className="container mx-auto px-4 sm:px-6 lg:px-0 py-12">
+    <div className="container mx-auto px-4 sm:px-6 lg:px-0 py-12 relative">
       {/* Heading */}
-      <div className="text-center max-w-2xl mx-auto mb-12">
+      <div className="text-center max-w-2xl mx-auto">
         <p className="text-xs sm:text-sm md:text-base font-semibold text-violet-600 uppercase">
           WHO WE ARE
         </p>
@@ -79,6 +80,11 @@ const AboutUs = () => {
       </div>
     </section>
     <OurSkills/>
+    <img
+          src={lightImg}
+          alt="Light Beam"
+          className="absolute top-20 left-1/8  w-[100px] h-[100px] animate-light-float"
+        />
     </div>
   );
 };

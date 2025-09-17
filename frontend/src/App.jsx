@@ -7,7 +7,7 @@ import Footer from "./components/Footer";
 import Hero from "./components/Hero";
 import About from "./components/About";
 import Dashboard from "./components/Dashboard";
-import ContactUs from "./components/ContactUs";
+import Contact from "./components/ContactUs";
 import Mission from "./pages/Mission";
 import Vision from "./pages/Vision";
 import Team from "./pages/Team";
@@ -25,7 +25,7 @@ function App() {
         <Route path="/" element={<Dashboard />} />
         <Route path="/about" element={<About />} />
         <Route path="/services" element={<Services />} />
-        <Route path="/contact" element={<ContactUs />} />
+        <Route path="/contact" element={<Contact />} />
 
         <Route path="/mission" element={<Mission />} />
         <Route path="/vision" element={<Vision />} />

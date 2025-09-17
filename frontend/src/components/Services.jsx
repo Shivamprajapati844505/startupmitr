@@ -8,11 +8,12 @@ import service_04 from "../assets/service_04.jpeg";
 import service_03 from "../assets/service_03.png";
 import service_05 from "../assets/service_05.jpg";
 import service_06 from "../assets/service_06.webp";
+import lightImg from "../assets/lite-icons1.svg";
 
 const servicesData = [
   { title: "Startup Launch Support", description: "Helping new businesses get noticed...", image: service_01 },
   { title: "Business Expansion Planning", description: "Scaling existing businesses...", image: service_02 },
-  { title: "Verified Distributor Connections", description: "Directly connect with trustworthy distributors...", image: service_3  },
+  { title: "Verified Distributor Connections", description: "Directly connect with trustworthy distributors...", image: service_03  },
   { title: "Business & Market Consultation", description: "Providing customized advice...", image: service_04 },
   { title: "Digital Presence & Marketing", description: "Build a solid online presence...", image: service_05 },
   { title: "All-in-One Growth Services", description: "Business growth solutions...", image: service_06 },
@@ -25,16 +26,19 @@ const Services = ({ preview = false }) => {
 
  
   return (
-    <div className="bg-slate-100">
+    <div className="bg-slate-100 relative">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-10 sm:py-16" ref={sectionRef}>
         
         <div className="text-center max-w-2xl mx-auto mb-12">
           <p className="text-xs sm:text-sm md:text-base font-semibold text-violet-600 uppercase">
-            WHAT WE CREATE
+           OUR SERVICES
           </p>
           <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-indigo-950 mt-3">
             Providing Best Services
           </h1>
+          <p className="text-center text-gray-600 mt-3 sm:mt-4 text-xs sm:text-sm md:text-base lg:text-lg ">
+            Our Core Services to Accelerate Your Business Growth
+          </p>
         </div>
 
         {/* Cards */}
@@ -57,6 +61,12 @@ const Services = ({ preview = false }) => {
           </div>
         )}
       </div>
+      <img
+          src={lightImg}
+          alt="Light Beam"
+          className="absolute top-10 left-1/8  w-[100px] h-[100px] animate-light-float"
+        />
+        
     </div>
   );
 };
