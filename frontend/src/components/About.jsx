@@ -1,6 +1,6 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
-import { ArrowUpRightIcon } from "@heroicons/react/24/outline";
+import { ArrowRightIcon } from "@heroicons/react/24/outline";
 import imgLeft from "../assets/about_left.jpg";
 import imgRight from "../assets/about_right.jpg";
 import circleImg from "../assets/img_09.png";
@@ -57,7 +57,7 @@ const AboutUs = () => {
           <button onClick={() => navigate("/about")}
           className="mt-6 inline-flex items-center gap-2 bg-violet-700 hover:bg-violet-950 text-white font-semibold text-sm sm:text-base px-6 py-3 rounded-full shadow transition">
             Learn More
-            <ArrowUpRightIcon className="w-5 h-5" />
+            <ArrowRightIcon className="w-5 h-5" />
           </button>
         </div>
 

@@ -13,6 +13,7 @@ import Vision from "./pages/Vision";
 import Team from "./pages/Team";
 import Services from "./components/Services";
 import ScrollToTop from "./pages/ScrollToTop";
+import ServiceDetails from './components/ServiceDetails';
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
         <Route path="/" element={<Dashboard />} />
         <Route path="/about" element={<About />} />
         <Route path="/services" element={<Services />} />
+        <Route path="/services/:id" element={<ServiceDetails/>} />
         <Route path="/contact" element={<Contact />} />
 
         <Route path="/mission" element={<Mission />} />
