@@ -1,6 +1,6 @@
 import service_01 from "../assets/service_01.webp";
 import service_02 from "../assets/service_02.webp";
-import service_03 from "../assets/service_03.png";
+import service_03 from "../assets/service_03.webp";
 import service_04 from "../assets/service_04.jpeg";
 import service_05 from "../assets/service_05.jpg";
 import service_06 from "../assets/service_06.webp";

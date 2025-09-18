@@ -2,13 +2,7 @@ import React, { useState, useRef } from "react";
 import { useNavigate } from "react-router-dom";
 import ServiceCard from "../components/ServiceCards";
 import { ArrowRightIcon } from "@heroicons/react/24/outline";
-import service_01 from "../assets/service_01.webp";
-import service_02 from "../assets/service_02.webp";
-import service_04 from "../assets/service_04.jpeg";
-import service_03 from "../assets/service_03.png";
-import service_05 from "../assets/service_05.jpg";
-import service_06 from "../assets/service_06.webp";
-import servicesData from "../assets/index.js";
+import servicesData from "../assets/servicesData.js";
 import lightImg from "../assets/lite-icons1.svg";
 
 

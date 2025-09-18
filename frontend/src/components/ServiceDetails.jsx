@@ -1,6 +1,6 @@
 import React from "react";
 import { useParams, useNavigate } from "react-router-dom";
-import servicesData from "../assets/index.js";
+import servicesData from "../assets/servicesData.js";
 import { ArrowLeftIcon } from "@heroicons/react/24/outline";
 
 const ServiceDetails = () => {

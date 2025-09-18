@@ -3,7 +3,6 @@ import { ArrowUpRightIcon } from "@heroicons/react/24/solid";
 export default function OurSkills() {
   return (
     <section className="overflow-hidden py-20 w-full">
-      {/* ===== Our Skills Section ===== */}
       <div className="bg-violet-950 py-16 text-white text-center">
         <p className="text-sm uppercase tracking-widest text-gray-400">
           Skills
@@ -12,9 +11,9 @@ export default function OurSkills() {
           Our Skills
         </h2>
 
-        {/* Skills Progress Circles */}
+        
         <div className="mt-10 grid grid-cols-2 md:grid-cols-4 gap-10 max-w-4xl mx-auto">
-          {/* SMM */}
+          
           <div className="flex flex-col items-center">
             <div className="relative w-28 h-28">
               <svg className="w-full h-full transform -rotate-90">
@@ -31,7 +30,7 @@ export default function OurSkills() {
                   className="text-violet-500"
                   strokeWidth="8"
                   strokeDasharray="314"
-                  strokeDashoffset="25" // 92%
+                  strokeDashoffset="35" // 92%
                   strokeLinecap="round"
                   stroke="currentColor"
                   fill="transparent"
@@ -64,7 +63,7 @@ export default function OurSkills() {
                   className="text-violet-500"
                   strokeWidth="8"
                   strokeDasharray="314"
-                  strokeDashoffset="19" // 94%
+                  strokeDashoffset="24" // 94%
                   strokeLinecap="round"
                   stroke="currentColor"
                   fill="transparent"
@@ -97,7 +96,7 @@ export default function OurSkills() {
                   className="text-violet-500"
                   strokeWidth="8"
                   strokeDasharray="314"
-                  strokeDashoffset="6" // 98%
+                  strokeDashoffset="18" // 98%
                   strokeLinecap="round"
                   stroke="currentColor"
                   fill="transparent"
@@ -130,7 +129,7 @@ export default function OurSkills() {
                   className="text-violet-500"
                   strokeWidth="8"
                   strokeDasharray="314"
-                  strokeDashoffset="16" // 95%
+                  strokeDashoffset="18" // 95%
                   strokeLinecap="round"
                   stroke="currentColor"
                   fill="transparent"
@@ -148,7 +147,7 @@ export default function OurSkills() {
         </div>
       </div>
 
-      {/* ===== CTA Section ===== */}
+      {/* bottom section */}
       <div className="bg-gray-600 relative overflow-hidden">
         <div className="relative z-10 max-w-3xl mx-auto text-center py-20 px-6 text-white">
           <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold leading-snug">
