@@ -17,7 +17,7 @@ function Hero() {
           <img
             src={img_01}
             alt="Business Growth"
-            className="w-[200px] sm:w-[250px] md:w-[300px] lg:w-[500px] rounded-full"
+            className="w-[200px] sm:w-[250px] md:w-[300px] lg:w-[500px] rounded-full animate-slideInLeft"
           />
         </div>
 
@@ -68,7 +68,7 @@ function Hero() {
           <img
             src={img_02}
             alt="Analytics"
-            className="hidden sm:block w-[200px] sm:w-[250px] md:w-[300px] lg:w-[500px] rounded-lg"
+            className="hidden sm:block w-[200px] sm:w-[250px] md:w-[300px] lg:w-[500px] rounded-lg animate-slideInRight"
           />
         </div>
       </div>

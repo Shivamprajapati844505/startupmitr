@@ -19,7 +19,7 @@ const Categories = () => {
         </p>
       </div>
 
-      {/* Responsive grid: 2 on mobile, 3 on medium, 4 on large */}
+     
       <div className="grid grid-cols-1 xs:grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
         {categories.map((cat, index) => (
           <CategoryCard key={index} {...cat} />

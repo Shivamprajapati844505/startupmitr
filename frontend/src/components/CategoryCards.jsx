@@ -2,19 +2,16 @@ import React from "react";
 
 const CategoryCard = ({ image, avatar, name, title }) => {
   return (
-    <div className="bg-white rounded-xl shadow-md overflow-hidden w-full max-w-sm mx-auto min-h-[240px] flex flex-col transform transition-transform duration-300 hover:scale-105 hover:shadow-lg">
+    <div className="bg-white rounded-xl shadow-md overflow-hidden w-full max-w-sm mx-auto min-h-[240px] flex flex-col transform transition-transform duration-300 hover:scale-105 hover:shadow-lg cursor-pointer group">
       {/* Cover Image */}
       <div className="relative h-40">
-        <img
-          src={image}
-          alt={name}
-          className="w-full h-full object-cover"
-        />
+        <img src={image} alt={name} className="w-full h-full object-cover" />
         <div className="absolute inset-x-0 -bottom-10 flex justify-center">
           <img
             src={avatar}
             alt={name}
-            className="w-20 h-20 rounded-full border-4 border-white object-cover shadow-md bg-gray-100"
+            className="w-20 h-20 rounded-full border-4 border-white object-cover shadow-md bg-gray-100 
+               transform rotate-0 transition-transform duration-700 ease-in-out group-hover:rotate-[360deg]"
           />
         </div>
       </div>
