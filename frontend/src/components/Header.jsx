@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { FaSearch, FaBars, FaTimes } from "react-icons/fa";
 import { ArrowUpRightIcon } from "@heroicons/react/24/outline";
-
+import logo from "../assets/logo.png"
 function Header() {
   const [open, setOpen] = useState(false);
 
@@ -11,7 +11,7 @@ function Header() {
         
         {/* Logo */}
         <h1 className="text-xl sm:text-2xl lg:text-3xl font-bold text-indigo-950">
-          Startup Mitr
+          <img src={logo} alt="brand_logo" className="w-32 h-20 sm:w-40 md:w-48 lg:w-60 xl:w-60" />
         </h1>
 
         {/* Desktop Nav */}
