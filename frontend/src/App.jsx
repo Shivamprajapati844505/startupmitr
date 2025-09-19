@@ -14,6 +14,7 @@ import Team from "./pages/Team";
 import Services from "./components/Services";
 import ScrollToTop from "./pages/ScrollToTop";
 import ServiceDetails from './components/ServiceDetails';
+import Categories from './components/Categories';
 
 function App() {
   return (
@@ -27,6 +28,7 @@ function App() {
         <Route path="/about" element={<About />} />
         <Route path="/services" element={<Services />} />
         <Route path="/services/:id" element={<ServiceDetails/>} />
+        <Route path="/categories" element={<Categories/>} />
         <Route path="/contact" element={<Contact />} />
 
         <Route path="/mission" element={<Mission />} />

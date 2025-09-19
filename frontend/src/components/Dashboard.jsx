@@ -14,7 +14,7 @@ const Dashboard = () => {
        <Hero />
        <Brand/>
       <Services preview />
-      <Categories/>
+      <Categories preview />
        <Projects/>
        <About/>
        <Contact />
