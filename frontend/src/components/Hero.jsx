@@ -23,7 +23,7 @@ function Hero() {
 
         {/* Center Content */}
         <div className="text-center md:text-left order-3 md:order-none">
-          <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-extrabold text-indigo-950 leading-snug sm:leading-tight mt-3 sm:mt-4">
+          <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-extrabold text-indigo-900 leading-snug sm:leading-tight mt-3 sm:mt-4">
             Let’s Build Your <br /> Growth Plan
           </h1>
 
@@ -39,15 +39,15 @@ function Hero() {
               onClick={() => {
                 navigate("contact");
               }}
-              className="flex items-center gap-2 bg-violet-700 hover:bg-violet-950 text-white font-semibold 
+              className="flex items-center gap-2 bg-sky-700 hover:bg-indigo-900 text-white font-semibold 
     px-5 py-2 sm:px-6 sm:py-2.5 md:px-7 md:py-3 text-sm sm:text-base rounded-full shadow transition"
             >
               <span>Get Started</span>
             </button>
 
             <button
-              className="flex items-center gap-2 border-2 font-semibold border-violet-600 text-violet-600 
-    hover:bg-violet-600 hover:text-white px-5 py-2 sm:px-6 sm:py-2.5 md:px-7 md:py-3 text-sm sm:text-base 
+              className="flex items-center gap-2 border-2 font-semibold border-sky-700 text-sky-700 
+    hover:bg-indigo-900 hover:border-indigo-900 hover:text-white px-5 py-2 sm:px-6 sm:py-2.5 md:px-7 md:py-3 text-sm sm:text-base 
     rounded-full shadow transition"
             >
               <FaPlay className="w-3 h-3 sm:w-4 sm:h-4" />

@@ -33,7 +33,7 @@ const ServiceCard = ({ id, title, description, image }) => {
 
       {/* Content */}
       <div className="mt-8 relative z-10">
-        <h3 className="text-xl font-bold text-indigo-950 group-hover:text-violet-700 transition">
+        <h3 className="text-xl font-bold text-indigo-900  transition">
           {title}
         </h3>
         <p className="text-gray-600 mt-2 text-sm line-clamp-3">
@@ -43,14 +43,14 @@ const ServiceCard = ({ id, title, description, image }) => {
         <motion.button
           onClick={handleLearnMore}
           whileHover={{ x: 5 }}
-          className="mt-4 text-violet-700 font-semibold text-sm flex items-center gap-1 transition"
+          className="mt-4 text-sky-700 font-semibold text-sm flex items-center gap-1 transition"
         >
           Learn More <ArrowRightIcon className="w-5 h-5" />
         </motion.button>
       </div>
 
       {/* Bottom gradient bar */}
-      <div className="absolute bottom-0 left-0 w-full h-1 bg-gradient-to-r from-violet-400 via-indigo-400 to-violet-600 scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left"></div>
+      <div className="absolute bottom-0 left-0 w-full h-1 bg-gradient-to-r from-sky-700 via-indigo-500 to-indigo-800 scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left"></div>
     </motion.div>
   );
 };

@@ -29,10 +29,10 @@ const Projects = () => {
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-10 sm:py-16 ">
         {/* Heading */}
         <div className="text-center max-w-2xl mx-auto mb-12">
-          <p className="text-xs sm:text-sm md:text-base font-semibold text-violet-600 uppercase">
+          <p className="text-xs sm:text-sm md:text-base font-semibold text-sky-700 uppercase">
             PROJECT COMPLETED
           </p>
-          <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-indigo-950 mt-3">
+          <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-indigo-900 mt-3">
             Project We Have Done
           </h1>
           <p className="text-gray-600 mt-3 text-sm sm:text-base">

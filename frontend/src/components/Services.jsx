@@ -28,10 +28,10 @@ const Services = ({ preview = false }) => {
         ref={sectionRef}
       >
         <div className="text-center max-w-2xl mx-auto mb-12">
-          <p className="text-xs sm:text-sm md:text-base font-semibold text-violet-600 uppercase">
+          <p className="text-xs sm:text-sm md:text-base font-semibold text-sky-700 uppercase">
             OUR SERVICES
           </p>
-          <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-indigo-950 mt-3">
+          <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-indigo-900 mt-3">
             Providing Best Services
           </h1>
           <p className="text-center text-gray-600 mt-3 sm:mt-4 text-xs sm:text-sm md:text-base lg:text-lg ">
@@ -66,7 +66,7 @@ const Services = ({ preview = false }) => {
               onClick={() => {
                 navigate("/services");
               }}
-              className="flex items-center gap-2 bg-violet-700 hover:bg-violet-950 text-white font-semibold text-sm sm:text-base px-6 py-3 rounded-full shadow transition"
+              className="flex items-center gap-2 bg-sky-700 hover:bg-indigo-900 text-white font-semibold text-sm sm:text-base px-6 py-3 rounded-full shadow transition"
             >
               View All Services
               <ArrowRightIcon className="w-5 h-5" />

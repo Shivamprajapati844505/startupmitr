@@ -11,11 +11,11 @@ const Contact = () => {
   return (
     <div className="py-20 mb-0 bg-white relative">
       {/* Section Title */}
-      <div className="text-center max-w-2xl mx-auto mb-12 px-4  violet-700">
-        <p className="text-sm font-semibold text-violet-600 uppercase tracking-wide">
+      <div className="text-center max-w-2xl mx-auto mb-12 px-4  sky-700">
+        <p className="text-sm font-semibold text-sky-700 uppercase tracking-wide">
           Contact Us
         </p>
-        <h1 className="text-4xl sm:text-5xl font-bold text-indigo-950 mt-3 leading-snug">
+        <h1 className="text-4xl sm:text-5xl font-bold text-indigo-900 mt-3 leading-snug">
           Get in Touch With Us
         </h1>
         <p className="mt-4 text-gray-600 text-base sm:text-lg">
@@ -28,7 +28,7 @@ const Contact = () => {
       <section className="px-6 md:px-10 max-w-screen-xl mx-auto flex flex-col lg:flex-row gap-12 items-start ">
         {/* Left Content */}
         <div className="lg:w-1/2 space-y-6 px-4">
-          <h2 className="text-3xl sm:text-4xl font-bold text-indigo-950">
+          <h2 className="text-3xl sm:text-4xl font-bold text-indigo-900">
             We're Here to Help
           </h2>
           <p className="text-gray-600">
@@ -40,7 +40,7 @@ const Contact = () => {
           <div className="space-y-6">
             {/* Phone */}
             <div className="flex items-center gap-4">
-              <div className="bg-purple-100 text-violet-700 p-3 rounded-full">
+              <div className="bg-purple-100 text-sky-700 p-3 rounded-full">
                 <FaPhoneAlt />
               </div>
               <div>
@@ -51,7 +51,7 @@ const Contact = () => {
 
             {/* Email */}
             <div className="flex items-center gap-4">
-              <div className="bg-purple-100 text-violet-700 p-3 rounded-full">
+              <div className="bg-purple-100 text-sky-700 p-3 rounded-full">
                 <FaEnvelope />
               </div>
               <div>
@@ -64,7 +64,7 @@ const Contact = () => {
 
             {/* Location */}
             <div className="flex items-start gap-4">
-              <div className="bg-purple-100 text-violet-700 p-3 rounded-full">
+              <div className="bg-purple-100 text-sky-700 p-3 rounded-full">
                 <FaMapMarkerAlt />
               </div>
               <div>
@@ -80,7 +80,7 @@ const Contact = () => {
         </div>
 
         {/* Right Form */}
-        <div className="lg:w-1/2 w-full bg-white p-8 shadow-xl rounded-xl text-indigo-950">
+        <div className="lg:w-1/2 w-full bg-white p-8 shadow-xl rounded-xl text-indigo-900">
           <h3 className="text-2xl sm:text-3xl font-semibold mb-6">
             Let's Talk About Your Idea
           </h3>
@@ -90,33 +90,33 @@ const Contact = () => {
               <input
                 type="text"
                 placeholder="First Name"
-                className="w-full border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-violet-700"
+                className="w-full border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-sky-700"
               />
               <input
                 type="text"
                 placeholder="Last Name"
-                className="w-full border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-violet-700"
+                className="w-full border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-sky-700"
               />
             </div>
             <input
               type="email"
               placeholder="Email Address"
-              className="w-full border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-violet-700"
+              className="w-full border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-sky-700"
             />
             <input
               type="text"
               placeholder="Phone Number"
-              className="w-full border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-violet-700"
+              className="w-full border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-sky-700"
             />
             <textarea
               placeholder="Your Message"
               rows={4}
-              className="w-full border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-violet-700"
+              className="w-full border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-sky-700"
             ></textarea>
 
             <button
               type="submit"
-              className="flex items-center gap-2 bg-violet-700 hover:bg-violet-950 text-white px-6 py-3 rounded-full font-medium transition"
+              className="flex items-center gap-2 bg-sky-700 hover:bg-indigo-900 text-white px-6 py-3 rounded-full font-medium transition"
             >
               Send Message <FaArrowRight />
             </button>

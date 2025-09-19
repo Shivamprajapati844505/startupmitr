@@ -3,7 +3,7 @@ import { ArrowUpRightIcon } from "@heroicons/react/24/solid";
 export default function OurSkills() {
   return (
     <section className="overflow-hidden py-20 w-full">
-      <div className="bg-violet-950 py-16 text-white text-center">
+      <div className="bg-sky-900 py-16 text-white text-center">
         <p className="text-sm uppercase tracking-widest text-gray-400">
           Skills
         </p>
@@ -27,7 +27,7 @@ export default function OurSkills() {
                   cy="56"
                 />
                 <circle
-                  className="text-violet-500"
+                  className="text-yellow-400 "
                   strokeWidth="8"
                   strokeDasharray="314"
                   strokeDashoffset="35" // 92%
@@ -60,7 +60,7 @@ export default function OurSkills() {
                   cy="56"
                 />
                 <circle
-                  className="text-violet-500"
+                  className="text-yellow-400 "
                   strokeWidth="8"
                   strokeDasharray="314"
                   strokeDashoffset="24" // 94%
@@ -93,7 +93,7 @@ export default function OurSkills() {
                   cy="56"
                 />
                 <circle
-                  className="text-violet-500"
+                  className="text-yellow-400 "
                   strokeWidth="8"
                   strokeDasharray="314"
                   strokeDashoffset="18" // 98%
@@ -117,7 +117,7 @@ export default function OurSkills() {
             <div className="relative w-28 h-28">
               <svg className="w-full h-full transform -rotate-90">
                 <circle
-                  className="text-violet-500"
+                  className="text-indigo-900"
                   strokeWidth="8"
                   stroke="currentColor"
                   fill="transparent"
@@ -126,7 +126,7 @@ export default function OurSkills() {
                   cy="56"
                 />
                 <circle
-                  className="text-violet-500"
+                  className="text-yellow-400 "
                   strokeWidth="8"
                   strokeDasharray="314"
                   strokeDashoffset="18" // 95%
@@ -148,18 +148,18 @@ export default function OurSkills() {
       </div>
 
       {/* bottom section */}
-      <div className="bg-gray-600 relative overflow-hidden">
-        <div className="relative z-10 max-w-3xl mx-auto text-center py-20 px-6 text-white">
+      <div className="bg-yellow-400 relative overflow-hidden">
+        <div className="relative z-10 max-w-3xl mx-auto text-center py-20 px-6 text-sky-700">
           <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold leading-snug">
             Ready To Take Your Brand Development To The Next Level
           </h2>
-          <p className="mt-4 text-sm sm:text-base lg:text-lg text-red-100">
+          <p className="mt-4 text-sm sm:text-base lg:text-lg text-white">
             At Brand Startup Mitr, our innovative brand development strategies
             do more than build identity — they drive customer engagement,
             enhance your market presence, and deliver measurable growth.
           </p>
           <button
-            className="mt-8 inline-flex items-center gap-2 bg-violet-700  text-white hover:bg-violet-950 font-semibold text-sm sm:text-base px-6 py-3 rounded-full shadow transition"
+            className="mt-8 inline-flex items-center gap-2 bg-sky-700  text-white hover:bg-indigo-900 font-semibold text-sm sm:text-base px-6 py-3 rounded-full shadow transition"
           >
             Get Started
             <ArrowUpRightIcon className="w-5 h-5" />

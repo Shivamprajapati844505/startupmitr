@@ -14,7 +14,7 @@ const ServiceDetails = () => {
         <p className="text-xl font-semibold">Service not found</p>
         <button
           onClick={() => navigate("/services")}
-          className="mt-4 text-violet-600 underline hover:text-violet-800 transition"
+          className="mt-4 text-sky-700 underline hover:text-violet-800 transition"
         >
           Back to Services
         </button>
@@ -39,7 +39,7 @@ const ServiceDetails = () => {
       </p>
 
       <div className="space-y-6">
-        <h2 className="text-xl sm:text-2xl font-bold mb-2 border-b text-violet-700 border-violet-100 pb-2">
+        <h2 className="text-xl sm:text-2xl font-bold mb-2 border-b text-sky-700 border-violet-100 pb-2">
           What’s Included
         </h2>
 
@@ -73,7 +73,7 @@ const ServiceDetails = () => {
       <div className="mt-10 flex justify-center">
         <button
           onClick={() => navigate("/services")}
-          className="flex items-center gap-2 bg-violet-700 hover:bg-violet-950 text-white font-medium text-sm sm:text-base px-6 py-3 rounded-full shadow transition"
+          className="flex items-center gap-2 bg-sky-700 hover:bg-indigo-900 text-white font-medium text-sm sm:text-base px-6 py-3 rounded-full shadow transition"
         >
           <ArrowLeftIcon className="w-5 h-5" />
           Back to All Services
