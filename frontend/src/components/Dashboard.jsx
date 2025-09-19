@@ -8,6 +8,7 @@ import Brand from './Brand';
 import Services from './Services';
 import Projects from './Projects';
 import Categories from './Categories';
+import States from './States';
 const Dashboard = () => {
   return (
     <div>
@@ -16,7 +17,7 @@ const Dashboard = () => {
       <Services preview />
       <Categories preview />
        <Projects/>
-       <About/>
+       <States/>
        <Contact />
     </div>
   )
