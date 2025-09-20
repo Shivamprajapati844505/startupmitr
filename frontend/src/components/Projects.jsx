@@ -67,12 +67,12 @@ const Projects = () => {
       <img
         src={starImg}
         alt="Rotating Circle"
-        className="absolute top-70 left-15 w-[50px] h-[50px] animate-spin-slow"
+        className="absolute top-70 left-15 w-[30px] h-[30px] animate-spin-slow"
       />
       <img
         src={starImg}
         alt="Rotating Circle"
-        className="absolute top-150 right-40 w-[50px] h-[50px] animate-spin-slow"
+        className="absolute top-130 right-40 w-[30px] h-[30px] animate-spin-slow"
       />
     </div>
   );

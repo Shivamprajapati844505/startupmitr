@@ -1,73 +1,59 @@
 import React from "react";
-// import logo from "../assets/logo.png"; 
+import { FaFacebookF, FaInstagram, FaLinkedinIn } from "react-icons/fa";
 
 const Footer = () => {
   return (
-    <footer className="w-full bg-gray-900 text-white py-6 mt-10">
-      <div className="container mx-auto flex flex-col md:flex-row justify-between items-center px-4">
-        
-        
-        <div className="flex items-center space-x-3 mb-4 md:mb-0">
-          {/* <img src={logo} alt="StartupMitr Logo" className="h-10 w-10" /> */}
-          <span className="text-xl font-bold text-blue-400">StartupMitr</span>
+    <footer className="bg-gray-50 border-t">
+      <div className="container mx-auto px-6 py-12 grid grid-cols-1 md:grid-cols-3 gap-10">
+        {/* Logo & About */}
+        <div>
+          <h1 className="text-2xl font-bold text-indigo-900">
+            Startup<span className="text-red-500">Mitr</span>
+          </h1>
+          <p className="mt-4 text-gray-600 text-sm leading-relaxed">
+            We offer end-to-end business growth solutions from lead generation 
+            to distributor module, from branding to strategic guidance all done 
+            with transparency and trust.
+          </p>
+          <div className="flex space-x-4 mt-5">
+            <a href="" className="text-gray-500 hover:text-indigo-600">
+              <FaFacebookF />
+            </a>
+            <a href="" className="text-gray-500 hover:text-indigo-600">
+              <FaInstagram />
+            </a>
+            <a href="" className="text-gray-500 hover:text-indigo-600">
+              <FaLinkedinIn />
+            </a>
+          </div>
         </div>
 
-        
-        <ul className="flex space-x-6 mb-4 md:mb-0">
-          <li>
-            <a href="/" className="hover:text-blue-400">
-              Home
-            </a>
-          </li>
-          <li>
-            <a href="/vision" className="hover:text-blue-400">
-              Vision
-            </a>
-          </li>
-          <li>
-            <a href="/mission" className="hover:text-blue-400">
-              Mission
-            </a>
-          </li>
-          <li>
-            <a href="/mentors" className="hover:text-blue-400">
-              Mentors
-            </a>
-          </li>
-        </ul>
+        <div>
+          <h2 className="text-lg font-semibold text-gray-900">Quick Link</h2>
+          <ul className="mt-4 space-y-2 text-gray-600">
+            <li><a href="/">Home</a></li>
+            <li><a href="/about">About Us</a></li>
+            <li><a href="/services">Our Service</a></li>
+            <li><a href="/contact">Contact Us</a></li>
+          </ul>
+        </div>
 
-        
-        <div className="flex space-x-4">
-          <a
-            href="https://facebook.com"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="hover:text-blue-500"
-          >
-            Facebook
-          </a>
-          <a
-            href="https://twitter.com"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="hover:text-blue-400"
-          >
-            Twitter
-          </a>
-          <a
-            href="https://linkedin.com"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="hover:text-blue-300"
-          >
-            LinkedIn
-          </a>
+        {/* Contact & Newsletter */}
+        <div>
+          <h2 className="text-lg font-semibold text-gray-900">Contact Info</h2>
+          <ul className="mt-4 text-gray-600 space-y-2 text-sm">
+            <li><strong>Website:</strong> www.startupmitr.com</li>
+            <li><strong>Email:</strong> itsupport@startupmitr.com</li>
+            <li><strong>Phone:</strong> +91 9211603280</li>
+          </ul>
+
+          
         </div>
       </div>
 
-      
-      <div className="text-center text-gray-400 mt-4 text-sm border-t border-gray-700 pt-3">
-        &copy; {new Date().getFullYear()} StartupMitr. All rights reserved.
+      {/* Bottom */}
+      <div className="border-t py-4 text-center text-sm text-gray-500">
+        © Copyright 2025. All Rights Reserved by <span className="font-semibold">Startupmitr</span>
       </div>
     </footer>
   );

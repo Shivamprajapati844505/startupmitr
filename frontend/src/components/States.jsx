@@ -15,7 +15,7 @@ import state_12 from "../assets/states_12.png";
 import state_13 from "../assets/states_13.png";
 import state_14 from "../assets/states_14.png";
 import state_15 from "../assets/states_15.png";
-
+import starImg from "../assets/img_10.png"
 const states = [
   { name: "Andhra Pradesh", img: state_01 },
   { name: "Karnataka", img: state_02 },
@@ -107,6 +107,17 @@ const States = () => {
           })}
         </div>
       </div>
+      <img
+          src={starImg}
+          alt="Rotating Circle"
+          className="absolute top-40 right-45 w-[30px] h-[30px] animate-spin-slow"
+        />
+       <img
+          src={starImg}
+          alt="Rotating Circle"
+          className="absolute top-60 left-30 w-[30px] h-[30px] animate-spin-slow"
+        />
+       
     </div>
   );
 };

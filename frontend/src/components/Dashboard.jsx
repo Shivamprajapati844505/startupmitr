@@ -9,11 +9,13 @@ import Services from './Services';
 import Projects from './Projects';
 import Categories from './Categories';
 import States from './States';
+import IdeaToImpact from './IdeaToImpact';
 const Dashboard = () => {
   return (
     <div>
        <Hero />
        <Brand/>
+       <IdeaToImpact/>
       <Services preview />
       <Categories preview />
        <Projects/>
