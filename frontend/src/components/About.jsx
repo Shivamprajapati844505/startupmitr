@@ -6,7 +6,7 @@ import imgRight from "../assets/about_right.jpg";
 import circleImg from "../assets/img_09.png";
 import starImg from "../assets/img_10.png";
 import OurSkills from './OurSkills';
-import lightImg from "../assets/lite-icons1.svg";
+
 
 const AboutUs = () => {
   return (
@@ -79,11 +79,7 @@ const AboutUs = () => {
       </div>
     </section>
     <OurSkills/>
-    <img
-          src={lightImg}
-          alt="Light Beam"
-          className="absolute top-20 left-1/8  w-[100px] h-[100px] animate-light-float"
-        />
+  
     </div>
   );
 };

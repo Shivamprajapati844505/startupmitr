@@ -5,6 +5,7 @@ import icon1 from "../assets/avatar_01.png";
 import icon2 from "../assets/avatar_04.png";
 import icon3 from "../assets/avatar_03.png";
 import icon4 from "../assets/avatar_06.png";
+import AnimatedText from './../pages/AnimatedText';
 
 
 const features = [
@@ -83,9 +84,15 @@ const IdeaToImpact = () => {
 
         {/* Right - Heading and Stats */}
         <div className="flex-1">
-          <h2 className="text-3xl sm:text-4xl font-bold text-indigo-900 leading-snug">
+          {/* <h2 className="text-3xl sm:text-4xl font-bold text-indigo-900 leading-snug">
             Helping You Go From Idea To Impact
-          </h2>
+          </h2> */}
+           <AnimatedText
+            text="Helping You Go From Idea To Impact"
+            delayOffset={0}
+            className="block text-3xl sm:text-5xl md:text-5xl font-bold text-indigo-900 leading-snug sm:leading-tight mt-3 sm:mt-4"
+          />
+
           <p className="text-gray-700 mt-4">
             At Startup Mitr, our mission is simple, To support new startups and
             existing businesses who are struggling to enter or expand in the

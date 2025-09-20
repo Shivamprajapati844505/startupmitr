@@ -6,6 +6,7 @@ import img_02 from "../assets/img_02.png";
 import img_04 from "../assets/img_04.png";
 import img_05 from "../assets/img_05.png";
 import img_06 from "../assets/img_06.png";
+import AnimatedText from './../pages/AnimatedText';
 
 function Hero() {
   const navigate = useNavigate();
@@ -23,10 +24,18 @@ function Hero() {
 
         {/* Center Content */}
         <div className="text-center md:text-left order-3 md:order-none">
-          <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-extrabold text-indigo-900 leading-snug sm:leading-tight mt-3 sm:mt-4">
-            Let’s Build Your <br /> Growth Plan
-          </h1>
-
+          <AnimatedText
+            text="Let’s Build"
+            className="block text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-extrabold text-indigo-900 leading-snug sm:leading-tight mt-3 sm:mt-4"
+          /> <br />
+          <AnimatedText
+            text="Your"
+            className="block text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-extrabold text-indigo-900 leading-snug sm:leading-tight mt-3 sm:mt-4"
+          />
+          <AnimatedText
+            text="Growth Plan"
+            className="block text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-extrabold text-indigo-900 leading-snug sm:leading-tight"
+          />
           <p className="text-gray-600 mt-3 sm:mt-4 text-xs sm:text-sm md:text-base lg:text-lg max-w-xl">
             We help startups and businesses grow digitally, connect with
             distributors, and unlock real opportunities all with complete

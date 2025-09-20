@@ -8,9 +8,6 @@ import Hero from "./components/Hero";
 import About from "./components/About";
 import Dashboard from "./components/Dashboard";
 import Contact from "./components/ContactUs";
-import Mission from "./pages/Mission";
-import Vision from "./pages/Vision";
-import Team from "./pages/Team";
 import Services from "./components/Services";
 import ScrollToTop from "./pages/ScrollToTop";
 import ServiceDetails from './components/ServiceDetails';
@@ -31,9 +28,7 @@ function App() {
         <Route path="/categories" element={<Categories/>} />
         <Route path="/contact" element={<Contact />} />
 
-        <Route path="/mission" element={<Mission />} />
-        <Route path="/vision" element={<Vision />} />
-        <Route path="/team" element={<Team />} />
+
       </Routes>
 
       <Footer />

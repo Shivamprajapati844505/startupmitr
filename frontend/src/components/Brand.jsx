@@ -5,6 +5,7 @@ import imgLeft from "../assets/img_07.webp";
 import imgRight from "../assets/img_08.jpg";
 import circleImg from "../assets/img_09.png";
 import starImg from "../assets/img_10.png";
+import AnimatedText from "./../pages/AnimatedText";
 
 function Brand() {
   const navigate = useNavigate();
@@ -27,11 +28,35 @@ function Brand() {
 
         {/* Center Content */}
         <div className="text-center md:text-left max-w-xl mx-auto">
-          <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-indigo-900 leading-snug animate-typing">
-            Comprehensive Brand <br />
-            Development & <br />
-            Digital Growth Solutions
-          </h2>
+          <AnimatedText
+            text="Comprehensive"
+            delayOffset={0}
+            className="block text-3xl sm:text-4xl md:text-5xl font-extrabold text-indigo-900 leading-snug sm:leading-tight mt-3 sm:mt-4"
+          />
+
+          <AnimatedText
+            text="Brand"
+            delayOffset={0.5}
+            className="block text-3xl sm:text-4xl md:text-5xl font-extrabold text-indigo-900 leading-snug sm:leading-tight mt-3 sm:mt-4"
+          />
+
+          <AnimatedText
+            text="Development &"
+            delayOffset={1}
+            className="block text-3xl sm:text-4xl md:text-5xl font-extrabold text-indigo-900 leading-snug sm:leading-tight mt-3 sm:mt-4"
+          />
+
+          <AnimatedText
+            text="Brand Audit"
+            delayOffset={1.5}
+            className="block text-3xl sm:text-4xl md:text-5xl font-extrabold text-indigo-900 leading-snug sm:leading-tight mt-3 sm:mt-4"
+          />
+
+          <AnimatedText
+            text="Solutions"
+            delayOffset={1.5}
+            className="block text-3xl sm:text-4xl md:text-5xl font-extrabold text-indigo-900 leading-snug sm:leading-tight mt-3 sm:mt-4"
+          />
 
           <p className="text-gray-600 mt-4 text-sm sm:text-base md:text-lg">
             Welcome to{" "}

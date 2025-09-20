@@ -16,6 +16,7 @@ import state_13 from "../assets/states_13.png";
 import state_14 from "../assets/states_14.png";
 import state_15 from "../assets/states_15.png";
 import starImg from "../assets/img_10.png"
+import AnimatedHeading from './../pages/AnimatedHeading';
 const states = [
   { name: "Andhra Pradesh", img: state_01 },
   { name: "Karnataka", img: state_02 },
@@ -56,9 +57,10 @@ const States = () => {
         <p className="text-xs sm:text-sm md:text-base font-semibold text-sky-700 uppercase">
           OUR PRESENCE
         </p>
-        <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-indigo-900 mt-3">
+        {/* <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-indigo-900 mt-3">
           Key States We Operate In
-        </h1>
+        </h1> */}
+     <AnimatedHeading text="Key States We Operate In" />
         <p className="text-center text-gray-600 mt-3 sm:mt-4 text-xs sm:text-sm md:text-base lg:text-lg">
           We proudly deliver our services across major states to ensure reach and excellence throughout India.
         </p>

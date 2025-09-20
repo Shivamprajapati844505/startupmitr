@@ -4,6 +4,7 @@ import CategoryCard from "./CategoryCards";
 import categories from "../assets/catogryData.js";
 import { ArrowRightIcon } from "@heroicons/react/24/outline";
 import { motion } from "framer-motion";
+import AnimatedHeading from './../pages/AnimatedHeading';
 
 const Categories = ({ preview = false }) => {
   const navigate = useNavigate();
@@ -25,9 +26,10 @@ const Categories = ({ preview = false }) => {
         <p className="text-xs sm:text-sm md:text-base font-semibold text-sky-700 uppercase">
           Explore by Industry
         </p>
-        <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-indigo-900 mt-3">
+        {/* <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-indigo-900 mt-3">
           Business Services by Category
-        </h1>
+        </h1> */}
+        <AnimatedHeading text="Business Services by Category"/>
         <p className="text-center text-gray-600 mt-3 sm:mt-4 text-xs sm:text-sm md:text-base lg:text-lg">
           Discover our specialized services curated for each <br />
           business category to meet your unique industry needs.

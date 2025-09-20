@@ -12,6 +12,7 @@ import project_04 from "../assets/project_04.jpg";
 import project_05 from "../assets/project_05.png";
 import project_06 from "../assets/project_06.jpg";
 import project_07 from "../assets/project_07.jpg";
+import AnimatedHeading from "./../pages/AnimatedHeading";
 
 const Projects = () => {
   const projects = [
@@ -30,14 +31,15 @@ const Projects = () => {
         {/* Heading */}
         <div className="text-center max-w-2xl mx-auto mb-12">
           <p className="text-xs sm:text-sm md:text-base font-semibold text-sky-700 uppercase">
-            PROJECT COMPLETED
+            PROJECTS DELIVERED
           </p>
-          <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-indigo-900 mt-3">
-            Project We Have Done
-          </h1>
+          <AnimatedHeading text="Showcasing Our Work" />
+
           <p className="text-gray-600 mt-3 text-sm sm:text-base">
-            Dolorum tempor quis dictum tempore, curabitur commoding sec <br />{" "}
-            inventor aute maecenas commodo, nibh
+            We take pride in delivering high-quality solutions that meet our
+            clients’ needs. <br />
+            Each project is handled with professionalism, creativity, and
+            dedication.
           </p>
         </div>
 

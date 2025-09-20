@@ -2,9 +2,10 @@ import React, { useState, useRef } from "react";
 import { useNavigate } from "react-router-dom";
 import ServiceCard from "../components/ServiceCards";
 import { ArrowRightIcon } from "@heroicons/react/24/outline";
-import servicesData from "../assets/servicesData.js";
-import lightImg from "../assets/lite-icons1.svg";
+import servicesData from "../assets/servicesData.js"; 
 import { motion } from "framer-motion";
+import AnimatedText from './../pages/AnimatedText';
+import AnimatedHeading from './../pages/AnimatedHeading';
 
 const Services = ({ preview = false }) => {
   const navigate = useNavigate();
@@ -31,9 +32,8 @@ const Services = ({ preview = false }) => {
           <p className="text-xs sm:text-sm md:text-base font-semibold text-sky-700 uppercase">
             OUR SERVICES
           </p>
-          <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-indigo-900 mt-3">
-            Providing Best Services
-          </h1>
+          
+          <AnimatedHeading text="Providing Best Services" />
           <p className="text-center text-gray-600 mt-3 sm:mt-4 text-xs sm:text-sm md:text-base lg:text-lg ">
             Our Core Services to Accelerate Your Business Growth
           </p>
@@ -74,13 +74,7 @@ const Services = ({ preview = false }) => {
           </div>
         )}
       </div>
-
-      {/* Decorative Light Image */}
-      <img
-        src={lightImg}
-        alt="Light Beam"
-        className="absolute top-10 left-1/8 w-[100px] h-[100px] animate-light-float"
-      />
+      
     </div>
   );
 };
