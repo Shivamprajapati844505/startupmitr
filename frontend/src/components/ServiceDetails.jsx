@@ -2,6 +2,7 @@ import React from "react";
 import { useParams, useNavigate } from "react-router-dom";
 import servicesData from "../assets/servicesData.js";
 import { ArrowLeftIcon } from "@heroicons/react/24/outline";
+import AnimatedHeading from './../pages/AnimatedHeading';
 
 const ServiceDetails = () => {
   const { id } = useParams();
@@ -29,12 +30,13 @@ const ServiceDetails = () => {
         alt={service.title}
         className="rounded-xl shadow-lg mb-8 w-full max-h-[400px] object-cover"
       />
+ 
+     <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold !mb-4 text-indigo-900">
+      
+      </h1> 
+      <AnimatedHeading text={   service.title}/>
 
-      <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold mb-4 text-indigo-900">
-        {service.title}
-      </h1>
-
-      <p className="text-gray-700 text-base sm:text-lg md:text-xl leading-relaxed mb-8">
+      <p className="text-gray-700 text-base sm:text-lg md:text-lg leading-relaxed m-8">
         {service.description}
       </p>
 
@@ -73,7 +75,7 @@ const ServiceDetails = () => {
       <div className="mt-10 flex justify-center">
         <button
           onClick={() => navigate("/services")}
-          className="flex items-center gap-2 bg-sky-700 hover:bg-indigo-900 text-white font-medium text-sm sm:text-base px-6 py-3 rounded-full shadow transition"
+          className="flex items-center gap-2 bg-sky-700 hover:bg-indigo-900 hover:scale-105 text-white font-medium text-sm sm:text-base px-6 py-3 rounded-full shadow transition"
         >
           <ArrowLeftIcon className="w-5 h-5" />
           Back to All Services

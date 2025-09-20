@@ -4,8 +4,9 @@ import { ArrowRightIcon } from "@heroicons/react/24/outline";
 import imgLeft from "../assets/about_left.jpg";
 import imgRight from "../assets/about_right.jpg";
 import circleImg from "../assets/img_09.png";
-import starImg from "../assets/img_10.png";
 import OurSkills from './OurSkills';
+import AnimatedText from './../pages/AnimatedText';
+import AnimatedHeading from './../pages/AnimatedHeading';
 
 
 const AboutUs = () => {
@@ -16,9 +17,8 @@ const AboutUs = () => {
         <p className="text-xs sm:text-sm md:text-base font-semibold text-sky-700 uppercase">
           WHO WE ARE
         </p>
-        <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-indigo-900 mt-3">
-          About Our Company
-        </h1>
+        
+        <AnimatedHeading text="About Our Company"/>
         <p className="text-gray-600 mt-3 text-sm sm:text-base">
           We are a passionate team dedicated to helping businesses grow through <br />
           innovative strategies, creative marketing, and a strong digital
@@ -34,31 +34,46 @@ const AboutUs = () => {
             alt="Teamwork"
             className=" mt-0 w-[250px] sm:w-[300px] md:w-[350px] lg:w-[350px] rounded-full object-cover bg-amber-100 animate-slideInLeft"
           />
-          <img
-            src={starImg} 
-            alt="Rotating Circle"
-            className="absolute bottom-5 w-[50px] h-[50px] animate-spin-slow"
-          />
         </div>
 
         {/* Center Content */}
         <div className="text-center md:text-left max-w-xl mx-auto">
-          <h2 className="text-3xl sm:text-4xl md:text-3xl font-extrabold text-indigo-900 leading-snug">
-            Brand Development & Digital Marketing Solutions.
-          </h2>
+          <AnimatedText
+            text="Comprehensive"
+            delayOffset={0}
+            className="block text-3xl sm:text-4xl md:text-5xl font-extrabold text-indigo-900 leading-snug sm:leading-tight mt-3 sm:mt-4"
+          />
+
+          <AnimatedText
+            text="Brand"
+            delayOffset={0.5}
+            className="block text-3xl sm:text-4xl md:text-5xl font-extrabold text-indigo-900 leading-snug sm:leading-tight mt-3 sm:mt-4"
+          />
+
+          <AnimatedText
+            text="Development &"
+            delayOffset={1}
+            className="block text-3xl sm:text-4xl md:text-5xl font-extrabold text-indigo-900 leading-snug sm:leading-tight mt-3 sm:mt-4"
+          />
+
+          <AnimatedText
+            text="Brand Audit"
+            delayOffset={1.5}
+            className="block text-3xl sm:text-4xl md:text-5xl font-extrabold text-indigo-900 leading-snug sm:leading-tight mt-3 sm:mt-4"
+          />
+
+          <AnimatedText
+            text="Solutions"
+            delayOffset={1.5}
+            className="block text-3xl sm:text-4xl md:text-5xl font-extrabold text-indigo-900 leading-snug sm:leading-tight mt-3 sm:mt-4"
+          />
           <p className="text-gray-600 mt-4 text-sm sm:text-base md:text-lg">
             Welcome to{" "}
             <span className="font-semibold text-sky-700">Startup Mitr</span>,
             where we empower businesses to thrive in the digital era. We
-            specialize in brand development, digital marketing, sales strategy,
-            and IT services.
+            specialize in brand development, digital marketing, sales strategy,Brand Audit, and IT services.
           </p>
 
-          <button onClick={() => navigate("/about")}
-          className="mt-6 inline-flex items-center gap-2 bg-sky-700 hover:bg-indigo-900 text-white font-semibold text-sm sm:text-base px-6 py-3 rounded-full shadow transition">
-            Learn More
-            <ArrowRightIcon className="w-5 h-5" />
-          </button>
         </div>
 
         {/* Right Image */}

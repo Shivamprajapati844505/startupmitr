@@ -4,7 +4,6 @@ import { Pagination, Autoplay, Navigation } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
-import starImg from "../assets/img_10.png";
 import project_01 from "../assets/project_01.jpg";
 import project_02 from "../assets/project_02.png";
 import project_03 from "../assets/project_03.png";
@@ -66,16 +65,7 @@ const Projects = () => {
           ))}
         </Swiper>
       </div>
-      <img
-        src={starImg}
-        alt="Rotating Circle"
-        className="absolute top-70 left-15 w-[30px] h-[30px] animate-spin-slow"
-      />
-      <img
-        src={starImg}
-        alt="Rotating Circle"
-        className="absolute top-130 right-40 w-[30px] h-[30px] animate-spin-slow"
-      />
+
     </div>
   );
 };

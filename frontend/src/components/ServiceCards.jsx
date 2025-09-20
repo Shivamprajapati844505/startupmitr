@@ -11,7 +11,7 @@ const ServiceCard = ({ id, title, description, image }) => {
   };
 
   return (
-    <motion.div
+    <motion.div onClick={handleLearnMore}
       initial={{ opacity: 0, y: 50, scale: 0.95 }}
       whileInView={{ opacity: 1, y: 0, scale: 1 }}
       viewport={{ once: true, amount: 0.3 }}
@@ -24,7 +24,7 @@ const ServiceCard = ({ id, title, description, image }) => {
 
       {/* Image */}
       <div className="w-full h-44 rounded-xl overflow-hidden relative z-10">
-        <img
+        <img 
           src={image}
           alt={title}
           className="w-full h-full object-cover group-hover:scale-105 transition duration-700"

@@ -62,13 +62,13 @@ function Brand() {
             Welcome to{" "}
             <span className="font-semibold text-sky-700">Startup Mitr</span>,
             where we empower businesses to thrive in the digital era. We
-            specialize in brand development, digital marketing, sales strategy,
+            specialize in brand development, digital marketing, sales strategy, Brand Audit,
             and IT services.
           </p>
 
           <button
             onClick={() => navigate("/about")}
-            className="mt-6 inline-flex items-center gap-2 bg-sky-700 hover:bg-indigo-900 text-white font-semibold text-sm sm:text-base px-6 py-3 rounded-full shadow transition"
+            className="mt-6 inline-flex items-center gap-2 bg-sky-700 hover:bg-indigo-900 hover:scale-105 text-white font-semibold text-sm sm:text-base px-6 py-3 rounded-full shadow transition"
           >
             Learn More
             <ArrowUpRightIcon className="w-5 h-5" />

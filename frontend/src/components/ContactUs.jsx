@@ -6,7 +6,6 @@ import {
   FaArrowRight,
 } from "react-icons/fa";
 
-import starImg from "../assets/img_10.png";
 
 import AnimatedHeading from "./../pages/AnimatedHeading";
 
@@ -125,7 +124,7 @@ const Contact = () => {
 
             <button
               type="submit"
-              className="flex items-center gap-2 bg-sky-700 hover:bg-indigo-900 text-white px-6 py-3 rounded-full font-medium transition"
+              className="flex items-center gap-2 bg-sky-700 hover:bg-indigo-900 hover:scale-105 text-white px-6 py-3 rounded-full font-medium transition"
             >
               Send Message <FaArrowRight />
             </button>
@@ -134,16 +133,6 @@ const Contact = () => {
       </section>
 
       {/* Decorative Images */}
-      <img
-        src={starImg}
-        alt="Rotating Circle"
-        className="absolute top-90 right-20 w-[50px] h-[50px] animate-spin-slow"
-      />
-      <img
-        src={starImg}
-        alt="Rotating Circle"
-        className="absolute top-160 left-130 w-[30px] h-[30px] animate-spin-slow"
-      />
 
 
       {/* Google Map */}

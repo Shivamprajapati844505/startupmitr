@@ -104,7 +104,7 @@ const IdeaToImpact = () => {
           {/* CTA Button */}
           <button
             className="mt-6 flex items-center gap-2 border-2 font-semibold border-sky-700 text-sky-700 
-              hover:bg-indigo-900 hover:border-indigo-900 hover:text-white px-6 py-2.5 rounded-full 
+              hover:bg-indigo-900 hover:border-indigo-900 hover:scale-105 hover:text-white px-6 py-2.5 rounded-full 
               shadow transition"
           >
             START NOW <FaArrowRight />

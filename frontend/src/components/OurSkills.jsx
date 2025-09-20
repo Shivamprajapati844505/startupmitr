@@ -1,6 +1,10 @@
 import { ArrowUpRightIcon } from "@heroicons/react/24/solid";
+import AnimatedHeading from './../pages/AnimatedHeading';
+import { useNavigate } from 'react-router-dom';
 
 export default function OurSkills() {
+  const navigate = useNavigate();
+
   return (
     <section className="overflow-hidden py-20 w-full">
       <div className="bg-sky-900 py-16 text-white text-center">
@@ -150,15 +154,13 @@ export default function OurSkills() {
       {/* bottom section */}
       <div className="bg-yellow-400 relative overflow-hidden">
         <div className="relative z-10 max-w-3xl mx-auto text-center py-20 px-6 text-sky-700">
-          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold leading-snug">
-            Ready To Take Your Brand Development To The Next Level
-          </h2>
+          <AnimatedHeading text="Ready To Take Your Brand Development"/>
           <p className="mt-4 text-sm sm:text-base lg:text-lg text-white">
             At Brand Startup Mitr, our innovative brand development strategies
             do more than build identity — they drive customer engagement,
             enhance your market presence, and deliver measurable growth.
           </p>
-          <button
+          <button onClick={()=> navigate('/contact')}
             className="mt-8 inline-flex items-center gap-2 bg-sky-700  text-white hover:bg-indigo-900 font-semibold text-sm sm:text-base px-6 py-3 rounded-full shadow transition"
           >
             Get Started

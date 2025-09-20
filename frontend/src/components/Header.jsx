@@ -59,7 +59,7 @@ function Header() {
           {/* Get Started Button */}
           <button
             onClick={() => navigate("/contact")}
-            className="hidden md:flex items-center gap-2 bg-sky-700 group hover:bg-indigo-900 text-white font-semibold 
+            className="hidden md:flex items-center gap-2 bg-sky-700 group hover:bg-indigo-900 hover:scale-105 text-white font-semibold 
             text-sm sm:text-base lg:text-lg px-4 py-2 sm:px-5 sm:py-2.5 lg:px-6 lg:py-3 rounded-full shadow transition"
           >
             Get Started

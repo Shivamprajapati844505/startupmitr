@@ -48,7 +48,7 @@ function Hero() {
               onClick={() => {
                 navigate("contact");
               }}
-              className="flex items-center gap-2 bg-sky-700 hover:bg-indigo-900 text-white font-semibold 
+              className="flex items-center gap-2 bg-sky-700 hover:bg-indigo-900 hover:scale-105 text-white font-semibold 
     px-5 py-2 sm:px-6 sm:py-2.5 md:px-7 md:py-3 text-sm sm:text-base rounded-full shadow transition"
             >
               <span>Get Started</span>
@@ -56,7 +56,7 @@ function Hero() {
 
             <button
               className="flex items-center gap-2 border-2 font-semibold border-sky-700 text-sky-700 
-    hover:bg-indigo-900 hover:border-indigo-900 hover:text-white px-5 py-2 sm:px-6 sm:py-2.5 md:px-7 md:py-3 text-sm sm:text-base 
+    hover:bg-indigo-900 hover:border-indigo-900 hover:text-white hover:scale-105 px-5 py-2 sm:px-6 sm:py-2.5 md:px-7 md:py-3 text-sm sm:text-base 
     rounded-full shadow transition"
             >
               <FaPlay className="w-3 h-3 sm:w-4 sm:h-4" />

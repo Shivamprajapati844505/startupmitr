@@ -66,7 +66,7 @@ const Services = ({ preview = false }) => {
               onClick={() => {
                 navigate("/services");
               }}
-              className="flex items-center gap-2 bg-sky-700 hover:bg-indigo-900 text-white font-semibold text-sm sm:text-base px-6 py-3 rounded-full shadow transition"
+              className="flex items-center gap-2 bg-sky-700 hover:bg-indigo-900 hover:scale-105 text-white font-semibold text-sm sm:text-base px-6 py-3 rounded-full shadow transition"
             >
               View All Services
               <ArrowRightIcon className="w-5 h-5" />
