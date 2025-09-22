@@ -1,11 +1,11 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
 import { FaPlay } from "react-icons/fa";
-import img_01 from "../assets/img_01.png";
-import img_02 from "../assets/img_02.png";
-import img_04 from "../assets/img_04.png";
-import img_05 from "../assets/img_05.png";
-import img_06 from "../assets/img_06.png";
+import HeroLeft from "../assets/HeroLeft.png";
+import HeroRight from "../assets/HeroRight.png";
+import collab_01 from "../assets/collab_01.png";
+import collab_02 from "../assets/collab_02.png";
+import collab_03 from "../assets/collab_03.png";
 import AnimatedText from './../pages/AnimatedText';
 
 function Hero() {
@@ -16,7 +16,7 @@ function Hero() {
         {/* Left Side Image */}
         <div className="flex justify-center md:justify-start order-1 md:order-none">
           <img
-            src={img_01}
+            src={HeroLeft}
             alt="Business Growth"
             className="w-[200px] sm:w-[250px] md:w-[300px] lg:w-[500px] rounded-full animate-slideInLeft"
           />
@@ -65,17 +65,17 @@ function Hero() {
           </div>
 
           {/* Logos */}
-          <div className="flex flex-wrap justify-center md:justify-start gap-6 mt-10">
-            <img src={img_04} alt="Mangr" className="h-6 sm:h-8" />
-            <img src={img_05} alt="Artworx" className="h-6 sm:h-8" />
-            <img src={img_06} alt="Fibrolo" className="h-6 sm:h-8" />
+          <div className="flex flex-wrap justify-center md:justify-start gap-5 lg:gap-8 mt-5 lg:mt-14">
+            <img src={collab_01} alt="Mangr" className="h-8 sm:h-14 lg:w-30" />
+            <img src={collab_03} alt="Fibrolo" className="h-8 sm:h-14 lg:w-30" />
+            <img src={collab_02} alt="Artworx" className="h-8 sm:h-14 lg:w-30" />
           </div>
         </div>
 
         {/* Right Side Image */}
         <div className="flex justify-center md:justify-end order-2 md:order-none">
           <img
-            src={img_02}
+            src={HeroRight}
             alt="Analytics"
             className="hidden sm:block w-[200px] sm:w-[250px] md:w-[300px] lg:w-[500px] rounded-lg animate-slideInRight"
           />

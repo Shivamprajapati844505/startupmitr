@@ -4,7 +4,7 @@ import { ArrowRightIcon } from "@heroicons/react/24/outline";
 import imgLeft from "../assets/about_left.jpg";
 import imgRight from "../assets/about_right.jpg";
 import circleImg from "../assets/img_09.png";
-import OurSkills from './OurSkills';
+import OurSkills from '../pages/OurSkills';
 import AnimatedText from './../pages/AnimatedText';
 import AnimatedHeading from './../pages/AnimatedHeading';
 

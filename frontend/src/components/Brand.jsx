@@ -1,8 +1,8 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
 import { ArrowUpRightIcon } from "@heroicons/react/24/outline";
-import imgLeft from "../assets/img_07.webp";
-import imgRight from "../assets/img_08.jpg";
+import imgLeft from "../assets/BrandLeft.webp";
+import imgRight from "../assets/BrandRight.jpg";
 import circleImg from "../assets/img_09.png";
 import starImg from "../assets/img_10.png";
 import AnimatedText from "./../pages/AnimatedText";
@@ -87,7 +87,7 @@ function Brand() {
             src={imgRight}
             alt="Digital Growth"
             className="py-10 w-[250px] sm:w-[300px] md:w-[350px] lg:w-[400px] 
-               rounded-[12rem] object-cover relative z-10"
+               rounded-[12rem] object-cover relative z-10 animate-slideInRight"
           />
         </div>
       </div>
