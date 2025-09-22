@@ -8,6 +8,7 @@ import icon4 from "../assets/avatar_06.png";
 import AnimatedText from './../pages/AnimatedText';
 
 
+
 const features = [
   {
     title: "Verified Network Of Distributors",
@@ -65,7 +66,7 @@ const IdeaToImpact = () => {
           {features.map((item, index) => (
             <div
               key={index}
-              className="bg-[#f7faff] rounded-xl p-6 shadow-sm hover:shadow-md transition-all"
+              className="bg-sky-700 rounded-xl p-6 shadow-sm hover:shadow-md transition-all card-flip"
             >
               <div className="w-12 h-12 mb-4">
                 <img
@@ -74,10 +75,10 @@ const IdeaToImpact = () => {
                   className="w-full h-full object-contain"
                 />
               </div>
-              <h3 className="text-lg font-semibold text-indigo-900">
+              <h3 className="text-lg font-semibold text-white">
                 {item.title}
               </h3>
-              <p className="text-gray-600 mt-1 text-sm">{item.desc}</p>
+              <p className="text-indigo-200 mt-1 text-sm">{item.desc}</p>
             </div>
           ))}
         </div>
@@ -100,7 +101,6 @@ const IdeaToImpact = () => {
             generation to distributor onboarding, from branding to strategic
             guidance all done with transparency and trust.
           </p>
-
           {/* CTA Button */}
           <button
             className="mt-6 flex items-center gap-2 border-2 font-semibold border-sky-700 text-sky-700 

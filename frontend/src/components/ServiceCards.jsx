@@ -19,7 +19,7 @@ const ServiceCard = ({ id, title, description, image }) => {
       whileHover={{ y: -10, scale: 1.02 }}
       className="relative bg-white rounded-2xl shadow-lg overflow-hidden group p-6"
     >
-      {/* Decorative gradient circle behind image */}
+     
       <div className="absolute -top-10 -right-10 w-32 h-32 bg-gradient-to-br from-violet-200 to-violet-400 rounded-full opacity-30 blur-2xl group-hover:opacity-50 transition duration-500"></div>
 
       {/* Image */}
