@@ -12,6 +12,7 @@ import Services from "./components/Services";
 import ScrollToTop from "./pages/ScrollToTop";
 import ServiceDetails from './components/ServiceDetails';
 import Categories from './components/Categories';
+import LocationMap from './pages/LocationMap';
 
 function App() {
   return (
@@ -26,7 +27,7 @@ function App() {
         <Route path="/services" element={<Services />} />
         <Route path="/services/:id" element={<ServiceDetails/>} />
         <Route path="/categories" element={<Categories/>} />
-        <Route path="/contact" element={<Contact />} />
+        <Route path="/contact" element={<><Contact /><LocationMap/></>} />
 
 
       </Routes>

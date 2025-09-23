@@ -74,23 +74,36 @@ function Hero() {
               <FaPlay className="w-3 h-3 sm:w-4 sm:h-4" />
               <span>How We Work</span>
             </button>
-          </div>
-          {/* Logos */}
-          <div className="flex flex-wrap justify-center md:justify-start gap-5 lg:gap-8 mt-5 lg:mt-14">
-            <img src={collab_01} alt="Mangr" className="h-8 sm:h-14 lg:w-30" />
-            <img
-              src={collab_03}
-              alt="Fibrolo"
-              className="h-8 sm:h-14 lg:w-30"
-            />
-            <img
-              src={collab_02}
-              alt="Artworx"
-              className="h-8 sm:h-14 lg:w-30"
-            />
+          
+
+          
+          <div className="mt-5 text-center">
+            {/* Heading */}
+            <h2 className="text-lg sm:text-xl lg:text-2xl font-extrabold   text-indigo-900 mb-4">
+              Partner with
+            </h2>
+
+            {/* Logos */}
+            <div className="flex justify-center gap-5 lg:gap-8">
+              <img
+                src={collab_01}
+                alt="Mangr"
+                className="h-8 sm:h-14 xl:w-28 object-contain"
+              />
+              <img
+                src={collab_03}
+                alt="Fibrolo"
+                className="h-8 sm:h-14 xl:w-28 object-contain"
+              />
+              <img
+                src={collab_02}
+                alt="Artworx"
+                className="h-8 sm:h-14 xl:w-28 object-contain"
+              />
+            </div>
           </div>
         </div>
-
+        </div>
         {/* Right Side Image */}
         <div className="flex justify-center md:justify-end order-2 md:order-none">
           <img

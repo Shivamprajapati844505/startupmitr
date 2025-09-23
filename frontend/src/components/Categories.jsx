@@ -21,7 +21,7 @@ const Categories = ({ preview = false }) => {
   };
 
   return (
-    <div className="bg-sky-700 py-12 px-6 sm:px-12">
+    <div className=" bg-gray-50 py-12 px-6 sm:px-12">
       <div className="text-center max-w-2xl mx-auto mb-12">
         <p className="text-xs sm:text-sm md:text-base font-semibold text-sky-700 uppercase">
           Explore by Industry
@@ -30,7 +30,7 @@ const Categories = ({ preview = false }) => {
         <div className="!text-white">
           <AnimatedHeading text="Business Services by Category"/>
         </div>
-        <p className="text-center text-indigo-200 mt-3 sm:mt-4 text-xs sm:text-sm md:text-base lg:text-lg">
+        <p className="text-center text-gray-600 mt-3 sm:mt-4 text-xs sm:text-sm md:text-base lg:text-lg">
           Discover our specialized services curated for each <br />
           business category to meet your unique industry needs.
         </p>
@@ -57,8 +57,8 @@ const Categories = ({ preview = false }) => {
         <div className="flex justify-center mt-12">
           <button
             onClick={() => navigate("/categories")}
-            className="flex items-center gap-2 bg-white hover:bg-indigo-900
-            hover:text-white hover:scale-105 text-sky-700 font-semibold text-sm sm:text-base px-6 py-3 rounded-full shadow transition"
+            className="flex items-center gap-2 text-white hover:bg-indigo-900
+            hover:scale-105 bg-sky-700 font-semibold text-sm sm:text-base px-6 py-3 rounded-full shadow transition"
           >
             View All Categories
             <ArrowRightIcon className="w-5 h-5" />

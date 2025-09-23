@@ -34,9 +34,7 @@ const Projects = () => {
           </p>
           <AnimatedHeading text="Showcasing Our Work" />
 
-          <p className="text-gray-600 mt-3 text-sm sm:text-base">
-            We take pride in delivering high-quality solutions that meet our
-            clients’ needs. <br />
+          <p className="text-center text-gray-600 mt-3 sm:mt-4 text-xs sm:text-sm md:text-base lg:text-lg ">
             Each project is handled with professionalism, creativity, and
             dedication.
           </p>

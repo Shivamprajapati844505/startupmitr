@@ -80,7 +80,7 @@ function Brand() {
           <img
             src={circleImg}
             alt="Rotating Circle"
-            className="absolute top-40 right-100 w-[150px] h-[100px] animate-spin-slow"
+            className="absolute top-40 right-100 w-[150px] h-[100px] animate-spin-slow "
           />
 
           <img

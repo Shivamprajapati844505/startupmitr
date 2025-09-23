@@ -12,7 +12,7 @@ import logo from "../assets/logo.png";
 
 const Footer = () => {
   return (
-    <footer className="bg-white">
+    <footer className="bg-gradient-to-tr from-gray-100 to-gray-300">
       <div className="container mx-auto px-6 md:px-20 py-16 grid grid-cols-1 md:grid-cols-3 gap-16">
         {/* Logo & About */}
         <div className="flex flex-col items-start">
@@ -66,7 +66,7 @@ const Footer = () => {
     </a>
     <a
       href=""
-      className="bg-indigo-100 text-sky-700 hover:bg-indigo-200 p-3 rounded-full transition-colors duration-300"
+      className="bg-indigo-100 text-sky-700  hover:bg-indigo-300 p-3 rounded-full transition-colors duration-300"
     >
       <FaInstagram />
     </a>
@@ -123,8 +123,8 @@ const Footer = () => {
         </div>
       </div>
 
-      <div className="border-t py-4 text-center text-sm text-white bg-indigo-900 px-6 md:px-20">
-        <div>© {new Date().getFullYear()} StartupMitr. All rights reserved</div>
+      <div className=" py-4 text-center text-sm text-white bg-indigo-900 px-6 md:px-20">
+        <div>© {new Date().getFullYear()} Startup Mitr. All rights reserved</div>
       </div>
     </footer>
   );
