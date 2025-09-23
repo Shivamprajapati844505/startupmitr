@@ -65,7 +65,7 @@ const IdeaToImpact = () => {
           {features.map((item, index) => (
             <div
               key={index}
-              className="bg-sky-700 rounded-xl p-6 shadow-sm hover:shadow-md transition-all card-flip"
+              className="w-full h-64 bg-gradient-to-r from-indigo-900 via-sky-600 to-sky-700 rounded-xl p-6 shadow-sm hover:shadow-md transition-all card-flip"
             >
               <div className="w-12 h-12 mb-4">
                 <img

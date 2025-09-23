@@ -26,7 +26,7 @@ const Contact = () => {
       {/* Main Section */}
       <section className="px-4 md:px-10 max-w-screen-xl mx-auto flex flex-col lg:flex-row gap-8 lg:gap-12 items-start">
         {/* Left Content */}
-        <div className="flex-1 w-full space-y-6 px-6 py-10 lg:py-14 rounded-xl bg-sky-700 h-full">
+        <div className="flex-1 w-full space-y-6 px-6 py-10 lg:py-14 rounded-xl bg-gradient-to-r from-indigo-900 via-sky-600 to-sky-700 h-full">
           <h2 className="text-2xl sm:text-3xl md:text-4xl font-semibold text-white">
             We're Here to Help
           </h2>

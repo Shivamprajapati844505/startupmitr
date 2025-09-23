@@ -68,7 +68,6 @@ function Header() {
             </div>
           </button>
 
-          {/* Hamburger */}
           <button
             onClick={() => setOpen(!open)}
             className="md:hidden text-2xl text-indigo-900"
@@ -79,8 +78,18 @@ function Header() {
       </div>
 
       {/* Mobile Nav */}
-      {open && (
-        <nav className="md:hidden bg-white shadow-lg flex flex-col items-center space-y-4 py-6">
+      <div
+        className={`fixed inset-0 z-40 transition-transform duration-300 ease-in-out bg-black/90 ${
+          open ? "translate-x-0" : "-translate-x-full"
+        } md:hidden`}
+      >
+        {/* Mobile */}
+        <div className=" max-w h-full relative p-10 flex flex-col justify-center items-center space-y-20">
+          <FaTimes
+            className="absolute top-9 right-4 text-2xl text-indigo-900 cursor-pointer"
+            onClick={() => setOpen(false)}
+          />
+
           {navItems.map((item) => (
             <NavLink
               key={item.path}
@@ -88,18 +97,18 @@ function Header() {
               end
               onClick={() => setOpen(false)}
               className={({ isActive }) =>
-                `text-base font-semibold transition duration-300 ${
+                `block text-lg font-semibold transition duration-300 ${
                   isActive
-                    ? "text-sky-950 underline"
-                    : "text-indigo-950 hover:text-sky-950"
+                    ? "text-sky-700"
+                    : "text-indigo-900 hover:text-sky-700"
                 }`
               }
             >
               {item.name}
             </NavLink>
           ))}
-        </nav>
-      )}
+        </div>
+      </div>
     </header>
   );
 }
