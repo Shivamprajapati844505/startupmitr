@@ -10,14 +10,14 @@ import LocationMap from './../pages/LocationMap';
 
 const Contact = () => {
   return (
-    <div className="py-16 bg-white relative">
+    <div className=" py-10 lg:py-16 bg-white relative">
       {/* Section Title */}
       <div className="text-center max-w-2xl mx-auto mb-12 px-4">
-        <p className="text-sm font-semibold text-sky-700 uppercase tracking-wide">
+        <p className="text-xs sm:text-sm md:text-base font-semibold text-sky-700 uppercase">
           Contact Us
         </p>
         <AnimatedHeading text="Get in Touch With Us" />
-        <p className="mt-4 text-gray-600 text-base sm:text-lg">
+        <p className="text-center text-gray-600 mt-3 sm:mt-4 text-xs sm:text-sm md:text-base lg:text-lg">
           We value your connection and are always ready to hear from you. Let’s
           create something great together.
         </p>

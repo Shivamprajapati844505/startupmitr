@@ -11,7 +11,7 @@ import AnimatedHeading from './../pages/AnimatedHeading';
 
 const AboutUs = () => {
   return (
-    <div className="container mx-auto px-4 sm:px-6 lg:px-0 py-12 relative">
+    <div className="container mx-auto px-4 sm:px-6 lg:px-0 py-12 lg:py-16 relative">
       {/* Heading */}
       <div className="text-center max-w-2xl mx-auto">
         <p className="text-xs sm:text-sm md:text-base font-semibold text-sky-700 uppercase">
@@ -19,7 +19,7 @@ const AboutUs = () => {
         </p>
         
         <AnimatedHeading text="About Our Company"/>
-        <p className="text-gray-600 mt-3 text-sm sm:text-base">
+        <p className="text-center text-gray-600 mt-3 sm:mt-4 text-xs sm:text-sm md:text-base lg:text-lg ">
           We are a passionate team dedicated to helping businesses grow through <br />
           innovative strategies, creative marketing, and a strong digital
           presence.
@@ -71,7 +71,7 @@ const AboutUs = () => {
             Welcome to{" "}
             <span className="font-semibold text-sky-700">Startup Mitr</span>,
             where we empower businesses to thrive in the digital era. We
-            specialize in brand development, digital marketing, sales strategy,Brand Audit, and IT services.
+            specialize in brand development, digital marketing, sales strategy, Brand Audit, and IT services.
           </p>
 
         </div>

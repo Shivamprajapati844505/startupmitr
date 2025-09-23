@@ -10,8 +10,8 @@ import AnimatedText from "./../pages/AnimatedText";
 function Brand() {
   const navigate = useNavigate();
   return (
-    <section className="relative bg-white py-16 px-6 lg:px-20">
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-10 items-center">
+    <section className="relative bg-white py-8 lg:py-16 px-6 lg:px-20">
+      <div className="grid grid-cols-1 md:grid-cols-3  gap-4 lg:gap-10 items-center">
         {/* Left Image */}
         <div className="flex justify-center md:justify-start relative">
           <img
@@ -22,7 +22,7 @@ function Brand() {
           <img
             src={starImg}
             alt="Rotating Circle"
-            className="absolute bottom-0 w-[30px] h-[30px] animate-spin-slow"
+            className="absolute -bottom-10 left-2 w-[30px] h-[30px] animate-spin-slow"
           />
         </div>
 
@@ -59,8 +59,8 @@ function Brand() {
           />
 
           <p className="text-gray-600 mt-4 text-sm sm:text-base md:text-lg">
-            Welcome to{" "}
-            <span className="font-semibold text-sky-700">Startup Mitr</span>,
+            Welcome to
+             <span className="font-semibold text-sky-700 pl-1">Startup Mitr</span>,
             where we empower businesses to thrive in the digital era. We
             specialize in brand development, digital marketing, sales strategy, Brand Audit,
             and IT services.
@@ -87,7 +87,7 @@ function Brand() {
             src={imgRight}
             alt="Digital Growth"
             className="py-10 w-[250px] sm:w-[300px] md:w-[350px] lg:w-[400px] 
-               rounded-[12rem] object-cover relative z-10 animate-slideInRight"
+               rounded-[12rem] object-cover relative z-10 animate-slideInRight hidden sm:block"
           />
         </div>
       </div>

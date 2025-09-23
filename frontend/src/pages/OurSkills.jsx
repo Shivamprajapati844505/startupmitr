@@ -6,8 +6,8 @@ export default function OurSkills() {
   const navigate = useNavigate();
 
   return (
-    <section className="overflow-hidden py-20 w-full">
-      <div className="bg-sky-900 py-16 text-white text-center">
+    <section className="overflow-hidden mt-15 w-full">
+      <div className="bg-sky-900 py-5 lg:py-16 text-white text-center">
         <p className="text-sm uppercase tracking-widest text-gray-400">
           Skills
         </p>
@@ -34,7 +34,7 @@ export default function OurSkills() {
                   className="text-yellow-400 "
                   strokeWidth="8"
                   strokeDasharray="314"
-                  strokeDashoffset="35" // 92%
+                  strokeDashoffset="35" 
                   strokeLinecap="round"
                   stroke="currentColor"
                   fill="transparent"

@@ -4,7 +4,7 @@ import CategoryCard from "./CategoryCards";
 import categories from "../assets/catogryData.js";
 import { ArrowRightIcon } from "@heroicons/react/24/outline";
 import { motion } from "framer-motion";
-import AnimatedHeading from './../pages/AnimatedHeading';
+import AnimatedHeading from "./../pages/AnimatedHeading";
 
 const Categories = ({ preview = false }) => {
   const navigate = useNavigate();
@@ -21,14 +21,14 @@ const Categories = ({ preview = false }) => {
   };
 
   return (
-    <div className=" bg-gray-50 py-12 px-6 sm:px-12">
+    <div className=" bg-gray-50 py-6 lg:py-12 px-6 sm:px-12">
       <div className="text-center max-w-2xl mx-auto mb-12">
         <p className="text-xs sm:text-sm md:text-base font-semibold text-sky-700 uppercase">
           Explore by Industry
         </p>
-      
+
         <div className="!text-white">
-          <AnimatedHeading text="Business Services by Category"/>
+          <AnimatedHeading text="Business Services by Category" />
         </div>
         <p className="text-center text-gray-600 mt-3 sm:mt-4 text-xs sm:text-sm md:text-base lg:text-lg">
           Discover our specialized services curated for each <br />
@@ -38,7 +38,12 @@ const Categories = ({ preview = false }) => {
 
       {/* Cards Grid */}
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 px-6 lg:px-14">
-        {(showAll ? categories : categories.slice(0, 6)).map((cat, index) => (
+        {(showAll
+          ? categories
+          : window.innerWidth < 640
+          ? categories.slice(0, 3)
+          : categories.slice(0, 6)
+        ).map((cat, index) => (
           <motion.div
             key={index}
             custom={index}

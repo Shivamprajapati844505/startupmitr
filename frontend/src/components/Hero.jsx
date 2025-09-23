@@ -14,7 +14,7 @@ function Hero() {
   const navigate = useNavigate();
   return (
     <section className="relative bg-gradient-to-bl from-sky-100 via-sky-300 to-white">
-      <div className="container mx-auto px-4 sm:px-6 lg:px-12 py-10 sm:py-16 grid grid-cols-1 md:grid-cols-3 gap-8 items-center">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-12 py-5 lg:py-10 sm:py-16 grid grid-cols-1 md:grid-cols-3 gap-2 lg:gap-10 items-center">
         {/* Left Side Image */}
         <div className="flex justify-center md:justify-start order-1 md:order-none">
           <img
@@ -26,11 +26,7 @@ function Hero() {
 
         {/* Center Content */}
         <div className="text-center md:text-left order-3 md:order-none">
-          {/* <img
-            src={Bar}
-            alt="box"
-            className="w-20 float-once absolute top-110 left-2/3 -translate-x-5/6"
-          /> */}
+
           <AnimatedText
             text="Let’s Build"
             className="block text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-extrabold text-indigo-900 leading-snug sm:leading-tight mt-3 sm:mt-4"
@@ -47,9 +43,9 @@ function Hero() {
           <img
             src={HeroImg}
             alt="Rocket person"
-            className="h-40 float-up absolute"
+            className=" h-25 lg:h-40 float-up absolute"
           />
-          <p className="text-gray-600 mt-3 sm:mt-4 text-xs sm:text-sm md:text-base lg:text-lg max-w-xl">
+          <p className="text-gray-600 mt-4 text-sm sm:text-base md:text-lg">
             We help startups and businesses grow digitally, connect with
             distributors, and unlock real opportunities all with complete
             transparency.
