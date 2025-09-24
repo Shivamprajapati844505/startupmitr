@@ -7,6 +7,7 @@ import circleImg from "../assets/img_09.png";
 import OurSkills from '../pages/OurSkills';
 import AnimatedText from './../pages/AnimatedText';
 import AnimatedHeading from './../pages/AnimatedHeading';
+import OurJourney from './../pages/OurJourney';
 
 
 const AboutUs = () => {
@@ -93,6 +94,7 @@ const AboutUs = () => {
         </div>
       </div>
     </section>
+    <OurJourney/>
     <OurSkills/>
   
     </div>

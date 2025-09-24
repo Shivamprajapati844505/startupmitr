@@ -50,7 +50,7 @@ export default function OurSkills() {
             <p className="mt-3 font-semibold">S M M</p>
           </div>
 
-          {/* Brand Development */}
+          
           <div className="flex flex-col items-center">
             <div className="relative w-28 h-28">
               <svg className="w-full h-full transform -rotate-90">
@@ -67,7 +67,7 @@ export default function OurSkills() {
                   className="text-yellow-400 "
                   strokeWidth="8"
                   strokeDasharray="314"
-                  strokeDashoffset="24" // 94%
+                  strokeDashoffset="24" 
                   strokeLinecap="round"
                   stroke="currentColor"
                   fill="transparent"

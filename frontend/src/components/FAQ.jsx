@@ -12,13 +12,11 @@ const FAQ = () => {
 
   return (
     <section className="max-w-7xl mx-auto px-4 sm:px-6 py-12 lg:py-20">
-      {/* 2 Column Layout */}
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-start">
-        {/* Left Side: FAQ Accordion */}
         <div className="space-y-6">
-          {/* Section Heading */}
+          
           <div className="text-left max-w-xl mb-8 lg:mb-12">
-            <AnimatedHeading text="From Our Growth Desk" />
+            <AnimatedHeading text="Growth Desk FAQs" />
           </div>
 
           {faqData.map((faq, index) => (

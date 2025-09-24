@@ -137,7 +137,7 @@
     transform: translate(0, 0);
   }
   100% {
-    transform: translate(800px, -150px); 
+    transform: translate(500px, -180px); 
   }
 }
 
@@ -170,4 +170,19 @@
 
 .float-once {
   animation: floatOnce 2s ease-in-out infinite; 
+}
+
+@keyframes fadeUp {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-up {
+  animation: fadeUp 0.8s ease-out both;
 }
