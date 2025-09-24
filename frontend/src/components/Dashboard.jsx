@@ -10,6 +10,7 @@ import Projects from './Projects';
 import Categories from './Categories';
 import States from './States';
 import IdeaToImpact from './IdeaToImpact';
+import FAQ  from './FAQ';
 const Dashboard = () => {
   return (
     <div>
@@ -21,6 +22,7 @@ const Dashboard = () => {
        <Projects/>
        <States/>
        <Contact />
+       <FAQ/>
     </div>
   )
 }

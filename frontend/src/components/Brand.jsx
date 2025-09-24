@@ -7,7 +7,7 @@ import circleImg from "../assets/img_09.png";
 import starImg from "../assets/img_10.png";
 import AnimatedText from "./../pages/AnimatedText";
 
-function Brand() {
+const Brand = () => {
   const navigate = useNavigate();
   return (
     <section className="relative bg-white py-8 lg:py-16 px-6 lg:px-20">

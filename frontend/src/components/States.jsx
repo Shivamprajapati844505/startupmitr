@@ -54,15 +54,10 @@ const States = () => {
 
   return (
     <div className="w-full flex flex-col items-center py-8 lg:py-12 relative">
-      {/* Section Heading */}
-      {/* Section Heading */}
       <div className="text-center max-w-2xl mx-auto mb-4 lg:mb-12 px-4 relative">
-  
-
         <p className="text-xs sm:text-sm md:text-base font-semibold text-sky-700 uppercase">
           OUR PRESENCE
         </p>
-        
         <AnimatedHeading text="Key States We Operate In" />
         <p className="text-center text-gray-600 mt-3 sm:mt-4 text-xs sm:text-sm md:text-base lg:text-lg">
           We proudly deliver our services across major states to ensure reach
